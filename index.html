@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sus amongus</title>
+  <script>
+    window.onload = function () {
+      // Open a new tab with about:blank and inject iframe
+      const newTab = window.open("about:blank", "_blank");
+
+      if (newTab) {
+        newTab.document.write(`
+          <iframe src="https://hexorod.github.io/loader/" 
+                  style="border:none;width:100vw;height:100vh;"></iframe>
+        `);
+        newTab.document.close();
+
+        // Redirect current/original tab to Google Classroom
+        window.location.href = "https://classroom.google.com/";
+      } else {
+        alert("Popup blocked! Please allow pop-ups for this site.");
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>if u see stop u 67 mango boi</p>
+</body>
+</html>
